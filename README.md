@@ -1,5 +1,7 @@
 # Options Pricing Lab — Trader & Researcher View
 
+[Launch App](https://blackscholeslab.streamlit.app/)  
+
 An interactive app for pricing European options with Black–Scholes–Merton, exploring Greeks, and visualizing implied-volatility smiles/term structures. Designed with two perspectives:
 
 - **Trader View** — quick pricing, Greeks, and scenario testing  
