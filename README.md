@@ -10,8 +10,8 @@ An interactive app for pricing European options with Black–Scholes–Merton, e
 ## ✨ Features
 
 ### Trader mode
-- Inputs: \(S, K, T, \sigma, r, q\)  
-- One-click **Quick Scenarios**: \(S \pm 10\%\), \(\sigma \pm 5\) vol pts  
+- Inputs: $S, K, T, \sigma, r, q$  
+- One-click **Quick Scenarios**: $S \pm 10\%$, $\sigma \pm 5$ vol pts  
 - Live **Call/Put price** tiles  
 - **Greeks** (call by default): Delta, Gamma, Vega, Theta, Rho  
 - **Plotly** chart: Call & Put price vs Spot (dual y-axes)  
@@ -90,23 +90,27 @@ The app computes IV per row and overlays separate curves for calls and puts.
 - **Ranges & resolution** (Researcher mode) control computational grids for speed vs detail.  
 - **Synthetic smiles**:  
 
-  - Forward  
-    $$
-    F = S e^{(r - q)T}
-    $$
+Forward  
 
-  - Log-moneyness  
-    $$
-    x = \log \frac{K}{F}
-    $$
+$$
+F = S e^{(r - q)T}
+$$
 
-  - Parametric IV  
-    $$
-    \sigma(x) = \sigma_{\text{ATM}} + \text{skew} \cdot x + \text{curvature} \cdot x^2
-    $$  
+Log-moneyness  
 
-    clipped to  
-    $$
-    [10^{-4}, 5.0]
-    $$
+$$
+x = \log \frac{K}{F}
+$$
+
+Parametric IV  
+
+$$
+\sigma(x) = \sigma_{\text{ATM}} + \text{skew} \cdot x + \text{curvature} \cdot x^2
+$$
+
+clipped to  
+
+$$
+[10^{-4}, 5.0]
+$$
 
