@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#22d3ee"              # cyan accent
+backgroundColor="#f9fafb"           # light gray background
+secondaryBackgroundColor="#d1d5db"  # clearer medium gray for cards / boxes
+textColor="#111827"                 # dark slate text
+font="sans serif"
